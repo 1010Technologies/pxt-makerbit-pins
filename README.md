@@ -16,6 +16,30 @@ http://makerbit.com/
 
 ## Pin Blocks
 
+### MakerBit setLedPins
+
+Sets pins 5 to 16 to either on or off. These pins are the MakerBit LED pins.
+
+```sig
+makerbit.setLedPins(level: number)
+```
+
+### MakerBit setDigitalPin
+
+Sets a digital pin to either on or off and configures this pin as a digital output.
+
+```sig
+makerbit.setDigitalPin(name: number, level: number)
+```
+
+### MakerBit setAnalogPin
+
+Sets an analog pin to a given level and configures this pin as an analog/pwm output with the duty cycle proportional to the provided value. The value is a number between 0 (0% duty cycle) and 1023 (100% duty).
+
+```sig
+makerbit.setAnalogPin(name: number, level: number)
+```
+
 ## License
 
 Licensed under the MIT License (MIT). See LICENSE file for more details.
