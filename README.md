@@ -19,6 +19,7 @@ http://makerbit.com/
 ### MakerBit setLedPins
 
 Sets pins 5 to 16 to either on or off. These pins are the MakerBit LED pins.
+Make sure to turn off the built-in LED display when using all MakerBit LED pins.
 
 ```sig
 makerbit.setLedPins(level: number)
