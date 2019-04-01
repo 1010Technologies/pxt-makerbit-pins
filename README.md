@@ -1,4 +1,4 @@
-# MakerBit Touch
+# MakerBit Pins
 
 [![Build Status](https://travis-ci.org/1010Technologies/pxt-makerbit-pins.svg?branch=master)](https://travis-ci.org/1010Technologies/pxt-makerbit-pins)
 
