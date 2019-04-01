@@ -1,6 +1,6 @@
 {
     "name": "MakerBit-Pins",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Blocks for convenient programming of micro:bit pins",
     "license": "MIT",
     "dependencies": {
