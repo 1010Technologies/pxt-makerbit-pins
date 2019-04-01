@@ -1,0 +1,11 @@
+{
+  "PinLevel.High|block": "high",
+  "PinLevel.Low|block": "low",
+  "makerbit.level|block": "%level",
+  "makerbit.setAnalogPin|block": "set analog pin %pin | to %level",
+  "makerbit.setDigitalPin|block": "set digital pin %pin | to %level=makerbit_helper_level",
+  "makerbit.setLedPins|block": "set all LED pins to %level=makerbit_helper_level",
+  "makerbit|block": "MakerBit",
+  "{id:category}Makerbit": "Makerbit",
+  "{id:subcategory}Pins": "Pins"
+}
