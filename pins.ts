@@ -66,13 +66,13 @@ namespace makerbit {
 
   /**
    * Turns a digital pin level into a number.
-   * @param level the pin level, eg: PinLevel.High
+   * @param pinLevel the pin level, eg: PinLevel.High
    */
   //% blockId=makerbit_helper_level
   //% block="%level"
   //% blockHidden=true
   //% subcategory="Pins"
-  export function level(level: PinLevel): number {
-    return level;
+  export function level(pinLevel: PinLevel): number {
+    return pinLevel;
   }
 }
