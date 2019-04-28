@@ -35,6 +35,7 @@ namespace makerbit {
   //% weight=89
   //% subcategory="Pins"
   export function setDigitalPin(name: number, level: number): void {
+    name = name | 0; // cast name to int
     if (name < 0 || name > 20) {
       return;
     }
@@ -56,6 +57,7 @@ namespace makerbit {
   //% weight=88
   //% subcategory="Pins"
   export function setAnalogPin(name: number, level: number): void {
+    name = name | 0; // cast name to int
     if (name < 0 || name > 20) {
       return;
     }
