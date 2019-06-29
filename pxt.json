@@ -1,18 +1,20 @@
 {
-  "name": "MakerBit-Pins",
-  "version": "1.0.0",
-  "description": "Blocks for convenient programming of micro:bit pins",
-  "license": "MIT",
-  "dependencies": {
-    "core": "*"
-  },
-  "files": [
-    "namespace.ts",
-    "README.md",
-    "pins.ts",
-    "loops.ts",
-    "_locales/de/MakerBit-Pins-strings.json"
-  ],
-  "testFiles": ["test.ts"],
-  "public": true
+    "name": "MakerBit-Pins",
+    "version": "1.0.1",
+    "description": "Blocks for convenient programming of micro:bit pins",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "namespace.ts",
+        "README.md",
+        "pins.ts",
+        "loops.ts",
+        "_locales/de/MakerBit-Pins-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
 }
