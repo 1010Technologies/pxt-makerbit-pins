@@ -21,7 +21,7 @@ namespace loops {
         actionToBeRepeated(index);
       }
     } else {
-      for (let index = end; index >= start; index--) {
+      for (let index = start; index >= end; index--) {
         actionToBeRepeated(index);
       }
     }
