@@ -16,8 +16,14 @@ namespace loops {
     end: number,
     actionToBeRepeated: (index: number) => void
   ) {
-    for (let index = start; index <= end; index++) {
-      actionToBeRepeated(index);
+    if (start <= end) {
+      for (let index = start; index <= end; index++) {
+        actionToBeRepeated(index);
+      }
+    } else {
+      for (let index = end; index >= start; index--) {
+        actionToBeRepeated(index);
+      }
     }
   }
 }
