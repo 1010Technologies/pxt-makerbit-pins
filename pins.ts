@@ -4,7 +4,7 @@ const enum PinLevel {
   //% block="high"
   High = 1,
   //% block="low"
-  Low = 0
+  Low = 0,
 }
 
 namespace makerbit {
@@ -47,7 +47,7 @@ namespace makerbit {
    * Configures this pin as an analog/pwm output, and change the output value to the given level
    * with the duty cycle proportional to the provided value.
    * The value is a number between 0 (0% duty cycle) and 1023 (100% duty).
-   * @param name name of the pin in the range from 0 to 20, eg: 0
+   * @param name name of the pin in the range from 0 to 20, eg: 5
    * @param level value in the range from 0 to 1023 eg: 1023
    */
   //% blockId="makerbit_helper_set_analog_pin"
