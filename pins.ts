@@ -9,8 +9,9 @@ const enum PinLevel {
 
 namespace makerbit {
   /**
-   * Sets LED pins 5 to 16 to either on or off.
-   * The pins 5 to 16 are MakerBit LED pins.
+   * Sets LED pins from 5 to 16 to either on or off.
+   * The pins from pin 5 to 16 are the MakerBit LED pins.
+   * Make sure to turn off the built-in LED display when using all MakerBit LED pins.
    * @param level digital pin level, either 0 or 1
    */
   //% blockId="makerbit_helper_set_led_pins"
@@ -26,17 +27,17 @@ namespace makerbit {
   /**
    * Sets a digital pin to either on or off.
    * Configures this pin as a digital output (if necessary).
-   * @param name name of the pin in the range from 0 to 20, eg: 5
+   * @param name name of the pin in the range from 0 to 16, eg: 5
    * @param level digital pin level, either 0 or 1
    */
   //% blockId="makerbit_helper_set_digital_pin"
   //% block="set digital pin %pin | to %level=makerbit_helper_level"
-  //% name.min=0 name.max=20
+  //% name.min=0 name.max=16
   //% weight=89
   //% subcategory="Pins"
   export function setDigitalPin(name: number, level: number): void {
     name = name | 0; // cast name to int
-    if (name < 0 || name > 20) {
+    if (name < 0 || name > 16) {
       return;
     }
     pins.digitalWritePin(name + DigitalPin.P0, level);
@@ -47,18 +48,18 @@ namespace makerbit {
    * Configures this pin as an analog/pwm output, and change the output value to the given level
    * with the duty cycle proportional to the provided value.
    * The value is a number between 0 (0% duty cycle) and 1023 (100% duty).
-   * @param name name of the pin in the range from 0 to 20, eg: 5
+   * @param name name of the pin in the range from 0 to 16, eg: 5
    * @param level value in the range from 0 to 1023 eg: 1023
    */
   //% blockId="makerbit_helper_set_analog_pin"
   //% block="set analog pin %pin | to %level"
-  //% name.min=0 name.max=20
+  //% name.min=0 name.max=16
   //% level.min=0 level.max=1023
   //% weight=88
   //% subcategory="Pins"
   export function setAnalogPin(name: number, level: number): void {
     name = name | 0; // cast name to int
-    if (name < 0 || name > 20) {
+    if (name < 0 || name > 16) {
       return;
     }
     pins.analogWritePin(name + AnalogPin.P0, level);
