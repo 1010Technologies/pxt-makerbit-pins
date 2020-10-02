@@ -1,7 +1,7 @@
 //% category="Loops"
 namespace loops {
   /**
-   * Run part of the program the number of times you say using an index variable.
+   * Loop a program block multiple times.
    * The 'index' takes on the values from start to the end number, counting by 1, and run the specified blocks.
    * @param start start value, eg: 0
    * @param end end value, eg: 5

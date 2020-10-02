@@ -1,6 +1,7 @@
 {
   "PinLevel.High|block": "high",
   "PinLevel.Low|block": "low",
+  "loops.forLoop|block": "for $index | from $start | to $end ",
   "makerbit.level|block": "%level",
   "makerbit.setAnalogPin|block": "set analog pin %pin | to %level",
   "makerbit.setDigitalPin|block": "set digital pin %pin | to %level=makerbit_helper_level",
