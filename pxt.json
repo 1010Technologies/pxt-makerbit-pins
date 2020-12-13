@@ -11,6 +11,7 @@
         "README.md",
         "pins.ts",
         "loops.ts",
+        "next.ts",
         "_locales/de/MakerBit-Pins-strings.json"
     ],
     "testFiles": [
