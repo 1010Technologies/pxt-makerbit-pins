@@ -7,6 +7,8 @@ const enum PinLevel {
   Low = 0,
 }
 
+//% color=#0fbc11 icon="\u272a" block="MakerBit"
+//% category="MakerBit"
 namespace makerbit {
   /**
    * Sets LED pins from 5 to 16 to either on or off.
