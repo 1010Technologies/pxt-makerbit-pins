@@ -13,7 +13,8 @@ namespace makerbit {
   /**
    * Sets LED pins from 5 to 16 to either on or off.
    * The pins from pin 5 to 16 are the MakerBit LED pins.
-   * Make sure to turn off the built-in LED display when using all MakerBit LED pins.
+   * Make sure to turn off the built-in LED display when using the MakerBit LED pins. 
+   * Button A (pin 5) and button B (pin 11) cannot be used while LEDs are connected to those pins. 
    * @param level digital pin level, either 0 or 1
    */
   //% blockId="makerbit_helper_set_led_pins"
