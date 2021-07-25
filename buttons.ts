@@ -9,7 +9,7 @@ namespace makerbit {
     /**
     * Disable the microbit buttons. 
     */
-    //% shim=makerbit::enableButtons
+    //% shim=makerbit::disableButtons
     export function disableButtons(): void { }
 
 }
