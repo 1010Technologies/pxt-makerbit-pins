@@ -2,10 +2,10 @@
 
 using namespace pxt;
 
-namespace buttons {
+namespace input {
 
 //%
-void enable() {
+void enableButtons() {
 #if MICROBIT_CODAL
     // V2 only
     uBit.buttonA.enable();
@@ -14,7 +14,7 @@ void enable() {
 }
 
 //%
-void disable() {
+void disableButtons() {
 #if MICROBIT_CODAL
     // V2 only
     uBit.buttonA.disable();
