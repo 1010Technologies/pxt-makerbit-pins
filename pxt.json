@@ -8,9 +8,9 @@
     },
     "files": [
         "README.md",
-        "pins.ts",
         "buttons.ts",
         "buttons.cpp",
+        "pins.ts",
         "loops.ts",
         "_locales/de/MakerBit-Pins-strings.json"
     ],
