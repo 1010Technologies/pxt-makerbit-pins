@@ -4,12 +4,11 @@
     "description": "Blocks for convenient programming of micro:bit pins",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "buttons": "github:philipphenkel/pxt-buttons#v0.0.2"
     },
     "files": [
         "README.md",
-        "buttons.ts",
-        "buttons.cpp",
         "pins.ts",
         "loops.ts",
         "_locales/de/MakerBit-Pins-strings.json"
