@@ -1,15 +1,15 @@
-namespace makerbit {
+namespace buttons {
 
     /**
     * Enable the microbit buttons. 
     */
-    //% shim=makerbit::enableButtons
-    export function enableButtons(): void { }
+    //% shim=buttons::enable
+    export function enable(): void { }
 
     /**
     * Disable the microbit buttons. 
     */
-    //% shim=makerbit::disableButtons
-    export function disableButtons(): void { }
+    //% shim=buttons::disable
+    export function disable(): void { }
 
 }
