@@ -23,7 +23,7 @@ namespace makerbit {
   //% weight=90
   //% subcategory="Pins"
   export function setLedPins(level: number): void {
-    input.disableButtons();
+    buttons.disable();
     for (let i = 5; i <= 16; i++) {
       setDigitalPin(i, level);
     }
