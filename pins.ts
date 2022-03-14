@@ -16,13 +16,13 @@ namespace makerbit {
    * The pins from pin 5 to 16 are the MakerBit LED pins.
    * Make sure to turn off the built-in LED display when using the MakerBit LED pins. 
    * Button A (pin 5) and button B (pin 11) cannot be used while LEDs are connected to those pins. 
-   * @param level digital pin level, either 0 or 1
+   * @param level digital pin level, either true or false
    */
   //% blockId="makerbit_helper_set_led_pins"
   //% block="set all LED pins to %level=makerbit_helper_level"
   //% weight=90
   //% subcategory="Pins"
-  export function setLedPins(level: number): void {
+  export function setLedPins(level: boolean): void {
     buttons.disable();
     for (let i = 5; i <= 16; i++) {
       setDigitalPin(i, level);
@@ -33,19 +33,19 @@ namespace makerbit {
    * Sets a digital pin to either on or off.
    * Configures this pin as a digital output (if necessary).
    * @param name name of the pin in the range from 0 to 16, eg: 5
-   * @param level digital pin level, either 0 or 1
+   * @param level digital pin level, either true or false
    */
   //% blockId="makerbit_helper_set_digital_pin"
   //% block="set digital pin %pin | to %level=makerbit_helper_level"
   //% name.min=0 name.max=16
   //% weight=89
   //% subcategory="Pins"
-  export function setDigitalPin(name: number, level: number): void {
+  export function setDigitalPin(name: number, level: boolean): void {
     name = name | 0; // cast name to int
     if (name < 0 || name > 16) {
       return;
     }
-    pins.digitalWritePin(name + DigitalPin.P0, level);
+    pins.digitalWritePin(name + DigitalPin.P0, level ? 1 : 0);
   }
 
   /**
@@ -71,26 +71,14 @@ namespace makerbit {
   }
 
   /**
-   * Returns the value of a digital pin level.
+   * Converts a digital pin level into a boolean value.
    * @param pinLevel the pin level, eg: PinLevel.High
    */
   //% blockId=makerbit_helper_level
   //% block="%level"
   //% blockHidden=true
   //% subcategory="Pins"
-  export function level(pinLevel: PinLevel): number {
-    return pinLevel;
-  }
-
-  /**
-   * Turns a boolean into a digital pin level.
-   * @param high the pin level, eg: true
-   */
-  //% blockId=makerbit_helper_bool_level
-  //% block="%toLevel"
-  //% blockHidden=true
-  //% subcategory="Pins"
-  export function toLevel(high: boolean): PinLevel {
-    return high ? PinLevel.High : PinLevel.Low;
+  export function level(pinLevel: PinLevel): boolean {
+    return pinLevel === PinLevel.High;
   }
 }
