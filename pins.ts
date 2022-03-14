@@ -71,7 +71,7 @@ namespace makerbit {
   }
 
   /**
-   * Turns a digital pin level into a number.
+   * Returns the value of a digital pin level.
    * @param pinLevel the pin level, eg: PinLevel.High
    */
   //% blockId=makerbit_helper_level
@@ -80,5 +80,17 @@ namespace makerbit {
   //% subcategory="Pins"
   export function level(pinLevel: PinLevel): number {
     return pinLevel;
+  }
+
+  /**
+   * Turns a boolean into a digital pin level.
+   * @param high the pin level, eg: true
+   */
+  //% blockId=makerbit_helper_bool_level
+  //% block="%toLevel"
+  //% blockHidden=true
+  //% subcategory="Pins"
+  export function toLevel(high: boolean): PinLevel {
+    return high ? PinLevel.High : PinLevel.Low;
   }
 }
