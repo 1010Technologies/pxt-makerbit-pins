@@ -31,7 +31,7 @@ makerbit.setLedPins(level: number)
 Sets a digital pin to either on or off and configures this pin as a digital output.
 
 ```sig
-makerbit.setDigitalPin(name: number, level: number)
+makerbit.setDigitalPin(pin: number, level: number)
 ```
 
 ### MakerBit setAnalogPin
@@ -39,7 +39,15 @@ makerbit.setDigitalPin(name: number, level: number)
 Sets an analog pin to a given level and configures this pin as an analog/pwm output with the duty cycle proportional to the provided value. The value is a number between 0 (0% duty cycle) and 1023 (100% duty).
 
 ```sig
-makerbit.setAnalogPin(name: number, level: number)
+makerbit.setAnalogPin(pin: number, level: number)
+```
+
+### MakerBit timeAveragedLevel
+
+Returns the time-averaged input level from a sensor. The first time this is called it saves the time average. On the next calls, it subtracts this time-averaged level from the current time average and returns the absolute value.
+
+```sig
+makerbit.timeAveragedLevel(pin: number, timeSample: number)
 ```
 
 ## License
